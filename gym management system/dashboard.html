@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management Dashboard</title>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gym Management Dashboard</h1>
+    </header>
+    <main>
+        <section>
+            <!-- Form for Adding Members -->
+            <h2>Add New Member</h2>
+            <form id="member-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="text" id="membership" placeholder="Membership Type" required>
+                <button type="submit">Add Member</button>
+            </form>
+        </section>
+
+        <section>
+            <!-- Display Members -->
+            <h2>Gym Members</h2>
+            <ul id="members-list"></ul>
+        </section>
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+</html>
